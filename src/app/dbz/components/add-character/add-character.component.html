@@ -1,0 +1,14 @@
+<H4>Agregar personaje</H4>
+
+<form action="" class="row px-2" (ngSubmit)="emitCharacter()">
+
+  <input type="text" [(ngModel)]="character.name" name="name" class="form-control mb-2" placeholder="nombre">
+
+  <input type="number" [(ngModel)]="character.power" name="power" class="form-control mb-2" placeholder="Poder">
+
+  <button type="submit" class="btn btn-primary">Agregar</button>
+
+  <!-- pip convierte a json muestra en el html el contenido de character -->
+  <!-- <pre>{{ character | json }}</pre> -->
+
+</form>
