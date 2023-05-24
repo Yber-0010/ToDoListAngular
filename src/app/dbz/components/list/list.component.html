@@ -31,11 +31,11 @@
     <div>
       <span class="text-primary"> {{ i + 1 }}. </span>
       <span>{{ character.name }} - </span>
-      <strong>Power: </strong>
+      <strong>Cantidad: </strong>
       <span>{{ character.power }}</span>
     </div>
 
-    <button class="btn btn-danger" (click)="onDeleteCharacter(i)">x</button>
+    <button class="btn btn-danger" (click)="onDeleteCharacter(character.id)">x</button>
 
   </li>
 
